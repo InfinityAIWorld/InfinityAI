@@ -31,7 +31,8 @@ const Nav = () => {
       smooth={true}
       spy={true}
       className='cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF]'>
-        <HiMiniUsers />
+        <MdWork />
+        
       </Link>
       <Link
       to='services'
@@ -47,7 +48,7 @@ const Nav = () => {
       smooth={true}
       spy={true}
       className='cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF]'>
-        <MdWork />
+      <HiMiniUsers />  
       </Link>
       <Link
       to='contact'

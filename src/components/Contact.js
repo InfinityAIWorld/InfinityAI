@@ -1,14 +1,15 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import {fadeIn} from '../variants';
+import React from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 import { BsArrowRight } from "react-icons/bs";
 
 const Contact = () => {
   return (
-
-<div className="h-full lg:bg-contact bg-contain lg:bg-left-bottom bg-no-repeat mix-blend-lighten" id="contact">
-  
-      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
+    <div
+      className=" section h-full lg:bg-contact lg:bg-contain lg:bg-left-bottom bg-no-repeat mix-blend-lighten"
+      id="contact"
+    >
+      <div className="container mx-auto pt-8 pb-32 lg:py-8 lg:px-16 text-center xl:text-left flex items-center justify-center lg:justify-end h-full">
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2
             variants={fadeIn("up", 0.2)}
@@ -24,7 +25,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto"
+            className="flex-1 flex flex-col gap-6 w-full mx-auto justify-center"
           >
             <div className="flex gap-x-6 w-full">
               <input type="text" placeholder="name" className="input" />
@@ -46,4 +47,3 @@ const Contact = () => {
 };
 
 export default Contact;
-

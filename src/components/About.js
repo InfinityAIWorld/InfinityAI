@@ -14,7 +14,7 @@ const About = () => {
   });
   return (
   <section id='about' ref={ref} className='section'>
-    <div className="container mx-auto">
+    <div className="flex container mx-auto">
       <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center
       lg:gap-x-20 lg:gap-y-0 h-screen'>
         <motion.div 
@@ -70,8 +70,8 @@ const About = () => {
                 initial="hidden"
                 whileInView={'show'}
                 viewport={{once:false, amount:0.3}}
-        className='flex-1 flex-col space-y-5 '>
-        <div className='flex flex-row items-center h-full py-5 hover:bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow'>
+        className='flex-1 flex-col lg:space-y-5 '>
+        <div className='flex flex-row items-center lg:h-full lg:py-5 hover:bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow'>
          <div className="w-20 h-16 bg-[#340844] bg-opacity-50 text-[30px] rounded-full flex items-center justify-center mx-5 text-[#D55EFF] hover:text-white">
         <HiStar/>
          </div>

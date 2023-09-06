@@ -24,15 +24,15 @@ import DE from '../assets/DE.png';
 
 const Services = () => {
   return (
-    <section id="services" className=" flex items-center h-screen pt-28">
-      <div className="container mx-auto my-auto ">
+    <section id="services" className=" section flex items-center h-screen ">
+      <div className="container mx-auto my-auto h-full ">
         <div className=" flex flex-col m-2 mb-10  lg:bg-opacity-5 ">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className=" flex-1   lg:mb-0 max-w-[320px] lg:max-w-[570px]"
+            className=" flex-1   lg:mb-0 "
           >
             <h2 className="h2 text-accent font-semibold m-5 ml-0">
               What We Do.
@@ -49,7 +49,7 @@ const Services = () => {
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.3 }}
-          className=" justify-center py-5 h-full">
+          className=" justify-center pb-5">
             <Swiper
               // install Swiper modules
               modules={[FreeMode, Autoplay, Pagination]}

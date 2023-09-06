@@ -1,4 +1,4 @@
-import Image from '/Brain.svg';
+import Image from '/Brain.png';
 
 
 const Brain = () => {

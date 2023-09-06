@@ -94,20 +94,20 @@ const Banner = () => {
         <motion.div 
         className=''>
           <div className=' max-w-[737px] lg:max-w-[678px]  xl:flex xl:max-w-none
-         hidden lg:flex absolute  -bottom-32 lg:bottom-[4%] lg:right-[-0%]'>
+         hidden lg:flex absolute  -bottom-32 lg:bottom-[-4%] lg:right-[0%] mix-blend-lighten'>
           <img src={Robo} alt="" />
           </div>
-          <div className='animate-upAndDown1 w-full h-full max-w-[40px] max-h-[40px] hidden lg:flex absolute -bottom-32 lg:bottom-[35%] lg:right-[35%]'>
+          <div className='animate-upAndDown1 w-full h-full max-w-[40px] max-h-[40px] hidden lg:flex absolute -bottom-32 lg:bottom-[35%]  lg:right-[40%]'>
           <img src={Ball} alt="" />
           </div>
-          <div className='animate-upAndDown1 w-full h-full max-w-[60px] max-h-[60px] hidden lg:flex absolute -bottom-32 lg:bottom-[45%] lg:right-[15%]'>
+          <div className='animate-upAndDown1 w-full h-full max-w-[60px] max-h-[60px] hidden lg:flex absolute -bottom-32 lg:bottom-[45%]   lg:right-[20%]'>
           <img src={Ball2} alt="" />
           </div>
-          <div className='hidden lg:flex absolute animate-upAndDown1 w-full h-full max-w-[100px] max-h-[100px] -bottom-32 lg:bottom-[65%] lg:right-[38%]' >
+          <div className='hidden lg:flex absolute animate-upAndDown1 w-full h-full max-w-[100px] max-h-[100px] -bottom-32 lg:bottom-[65%] lg:right-[43%]' >
           <img src={Ball3} alt="" />
           
           </div>
-          <div className='hidden lg:flex absolute animate-upAndDown w-full h-full max-w-[300px] max-h-[300px]  -bottom-32 lg:bottom-[27%] lg:right-[20%]'>
+          <div className='hidden lg:flex absolute animate-upAndDown w-full h-full max-w-[300px] max-h-[300px]  -bottom-32 lg:bottom-[27%] lg:right-[17%]'>
           <img src={Brain} alt="" />
           </div>
         </motion.div>

@@ -92,8 +92,7 @@ const Services = () => {
                     </div>
                     <p className="font-secondary leading-tight text-center">
                     Unlock the potential of large language models with our tailored solutions,
-                     catering to various applications such as text creation, text summarization,
-                      and model fine-tuning. We equip your business with advanced tools for sentiment analysis,
+                     catering to various applications such as model fine-tuning, text generation, chatbots, etc. We equip your business with advanced tools for sentiment analysis,
                        entity linking, and chatbots, continuously innovating to meet and exceed your expectations.
                     </p>
                   </div>

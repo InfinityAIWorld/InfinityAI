@@ -23,16 +23,16 @@ const About = () => {
         whileInView={'show'}
         viewport={{once:false, amount:0.3}}
         className='flex-1'>
-           <h2 className=' h2 text-accent font-semibold'>About Us.</h2>
-          <h3 className=' h3 mb-4 '>We're a Data company with over 3 years of experience.
+           <h2 className=' h2 text-accent font-semibold'>About Us</h2>
+          <h3 className=' h3 mb-4 '>We are a Data company with projects across the US, Europe and South America!
           </h3>
           <p className='mb-6'>
-          I'm a Machine Learning Engineering professional with experience in Python, MLOps, MLflow, SQL, PowerBI, PySpark, Databricks, Git, Docker, Poetry, Azure Cloud, Azure DevOps, HTML, CSS, ReactJS and AngularJS.
+          We possess expertise in various domains including Artificial Intelligence, Data Engineering, Data Science, MLOps, Large Language Models, Data Analytics, among others!
           </p>
           <div className='flex gap-x-6 lg:gap-x-10 mb-12 lg:justify-center'>
             <div>
               <div className='text-[40px] font-tertiary text-gradient'>
-               +{ inView ? <CountUp start={0} end={3} duration={3} /> : null}
+               +{ inView ? <CountUp start={0} end={10} duration={3} /> : null}
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
                  Years of <br />
@@ -41,20 +41,19 @@ const About = () => {
             </div>
             <div>
               <div className='text-[40px] font-tertiary text-gradient'>
-               +{ inView ? <CountUp start={0} end={15} duration={3} /> : null}
+               +{ inView ? <CountUp start={0} end={100} duration={3} /> : null}
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
-              Projects <br />
-              Completed
+              Millions in Revenue <br />
+              for our Clients
               </div>
             </div>
             <div>
               <div className='text-[40px] font-tertiary text-gradient'>
-               +{ inView ? <CountUp start={0} end={7} duration={3} /> : null}
+               +{ inView ? <CountUp start={0} end={10} duration={3} /> : null}
               </div>
               <div className='font-primary text-sm tracking-[2px]'>
-                Models in  <br />
-                Production
+                Companies<br />
               </div>
             </div>
           </div>
@@ -77,8 +76,8 @@ const About = () => {
          </div>
 
          <div className='mr-5'>
-         <div className="text-white text-lg font-semibold capitalize leading-normal tracking-tight ">100% Secured</div>
-         <div className=" text-white text-opacity-70 text-base font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nulla quis laborum.</div>
+         <div className="text-white text-lg font-semibold capitalize leading-normal tracking-tight ">International Experience</div>
+         <div className=" text-white text-opacity-70 text-base font-normal">We have collaborated with prestigious companies such as PokerStars, Shopee, Bradesco, Ipiranga, among many others.</div>
          </div>
         </div>
         <div className='flex flex-row  items-center h-full py-5 hover:bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow'>
@@ -87,8 +86,8 @@ const About = () => {
          </div>
 
          <div className='mr-5'>
-         <div className="text-white text-lg font-semibold capitalize leading-normal tracking-tight ">Lorem, ipsum.</div>
-         <div className=" text-white text-opacity-70 text-base font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nulla quis laborum.</div>
+         <div className="text-white text-lg font-semibold capitalize leading-normal tracking-tight ">State-of-the-art solutions</div>
+         <div className=" text-white text-opacity-70 text-base font-normal">Our expertise in virtually all fields of data positions us as one of the few who can deliver top-quality solutions in every area. Need a chatbot? No worries—we can develop both the backend and the frontend. We've got you covered!</div>
          </div>
         </div>
         <div className='flex flex-row items-center h-full py-5  hover:bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow'>
@@ -98,7 +97,7 @@ const About = () => {
 
          <div className='mr-5'>
          <div className="text-white text-lg font-semibold capitalize leading-normal tracking-tight ">100% Secured</div>
-         <div className="text-white text-opacity-70 text-base font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nulla quis laborum.</div>
+         <div className="text-white text-opacity-70 text-base font-normal">We are committed to delivering outstanding results in the best way possible. If you're not completely satisfied, we offer a 100% money-back guarantee. This is a testament to the supreme confidence we have in our capabilities.</div>
          </div>
         </div>
         </motion.div>

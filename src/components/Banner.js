@@ -37,13 +37,17 @@ const Banner = () => {
               <br/>
               <br/>
               <TypeAnimation  sequence={[
-                'MLOps Engineer',
+                'MLOps Engineers',
                 2000,
-                'ML Engineer',
+                'ML Engineers',
                 2000,
-                'Data Scientist',
+                'Data Scientists',
                 2000,
-                'Data Analyst',
+                'Data Analysts',
+                2000,
+                'Data Engineers',
+                2000,
+                'AI Engineers',
                 2000,
               ]}
               speed={50}
@@ -59,7 +63,7 @@ const Banner = () => {
             whileInView={'show'}
             viewport={{once:false, amount:0.7}}
             className=' mb-8 max-wlg mx-auto lg:mx-0'>
-              Welcome to our website. Here, you'll find our projects, every position we've held, and all the services I offer to help you achieve your goals.</motion.p>
+              Welcome to our website. Here, you will find out about all the services that we offer, as well as learn a little more about what we have accomplished for our clients in previous years!</motion.p>
         <motion.div
         variants={fadeIn('up', 0.6)}
         initial="hidden"

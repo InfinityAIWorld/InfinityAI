@@ -38,9 +38,7 @@ const Services = () => {
               What We Do.
             </h2>
             <h3 className="h4  leading-tight mb-10 mr-3 pr-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae quia perferendis, enim sequi reiciendis ab ut sapiente
-              harum quibusdam perspiciatis.
+              These are the services that we offer!
             </h3>
             {/* <a href="https://www.linkedin.com/in/marivaldotorres/" target="_blank" ><button className='btn btn-lg rounded-lg'  >See my work</button></a> */}
           </motion.div>
@@ -93,9 +91,10 @@ const Services = () => {
                       Artificial Intelligence
                     </div>
                     <p className="font-secondary leading-tight text-center">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ea est vitae doloribus aliquid omnis magnam neque
-                      repudiandae porro. Laborum, a?
+                    Unlock the potential of large language models with our tailored solutions,
+                     catering to various applications such as text creation, text summarization,
+                      and model fine-tuning. We equip your business with advanced tools for sentiment analysis,
+                       entity linking, and chatbots, continuously innovating to meet and exceed your expectations.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -108,9 +107,11 @@ const Services = () => {
                     Data Science
                     </div>
                     <p className="font-secondary leading-tight text-center">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ea est vitae doloribus aliquid omnis magnam neque
-                      repudiandae porro. Laborum, a?
+                    Dive into the forefront of technology with our expert services in crafting and deploying
+                     Machine and Deep Learning models. We excel in diverse scenarios including time series
+                      forecasting, recommendation systems, anomaly detection, and churn prediction,
+                       offering adept solutions in customer segmentation and more, driving your business
+                        forward with data-driven strategies.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -123,9 +124,11 @@ const Services = () => {
                       Machine Learning Engineering
                     </div>
                     <p className="font-secondary leading-tight text-center">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ea est vitae doloribus aliquid omnis magnam neque
-                      repudiandae porro. Laborum, a?
+                    Embark on a seamless journey of model deployment with our expert MLOps services, 
+                    upholding the industry's best practices. Our team excels in building resilient CI/CD
+                     pipelines and conducting comprehensive unit and integration tests. Leveraging our 
+                     extensive experience with platforms like AWS, GCP, and Azure, we ensure your projects
+                      thrive with leading-edge technology.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -138,9 +141,9 @@ const Services = () => {
                     MLOps
                     </div>
                     <p className="font-secondary leading-tight text-center">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ea est vitae doloribus aliquid omnis magnam neque
-                      repudiandae porro. Laborum, a?
+                    Experience seamless integration of the best MLOps practices into your platform with our adept
+                     team. We enhance your system with features like model monitoring, automatic retraining,
+                      and model versioning, fostering efficiency, accuracy, and innovation in your operations.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -153,9 +156,10 @@ const Services = () => {
                     Data Analytics
                     </div>
                     <p className="font-secondary leading-tight text-center">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ea est vitae doloribus aliquid omnis magnam neque
-                      repudiandae porro. Laborum, a?
+                    Maximize your data's potential with our expert data analytics solutions.
+                     Implementing industry best practices, we transform raw data into actionable insights,
+                      utilizing tools such as predictive analytics and data visualization to enhance
+                       your business decision-making process.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -168,9 +172,10 @@ const Services = () => {
                     Data Engineering
                     </div>
                     <p className="font-secondary leading-tight text-center">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ea est vitae doloribus aliquid omnis magnam neque
-                      repudiandae porro. Laborum, a?
+                    Upgrade your data infrastructure with our premium data engineering services.
+                     Following the sector's best practices, we facilitate seamless data integration,
+                      storage, and management. Our services include real-time data processing and data warehousing,
+                       fostering a data-driven culture that encourages innovation and growth.
                     </p>
                   </div>
                 </SwiperSlide>

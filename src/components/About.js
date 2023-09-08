@@ -23,7 +23,7 @@ const About = () => {
         whileInView={'show'}
         viewport={{once:false, amount:0.3}}
         className='flex-1'>
-           <h2 className=' h2 text-accent font-semibold'>About Us</h2>
+           <h2 className=' h2 text-accent font-semibold'>About Us.</h2>
           <h3 className=' h3 mb-4 '>We are a Data company with projects across the US, Europe and South America!
           </h3>
           <p className='mb-6'>

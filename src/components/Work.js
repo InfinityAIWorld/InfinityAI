@@ -26,9 +26,7 @@ const Work = () => {
                   Who we're.
                 </h2>
                 <p className="max-w-sm mb-16">
-                  Explore key projects from my journey in MLOps Engineering,
-                  Data Science, and Data Analytics, showcasing my diverse
-                  expertise in optimizing workflows and deriving insights.
+                We are a well-rounded team with over 10 years of experience, specializing in all domains of data.
                 </p>
                 <a href="" target="_blank">
                   {/* <button className="btn btn-sm mb-2">View all projects</button> */}
@@ -101,12 +99,10 @@ const Work = () => {
                     Romulo Amaral
                   </div>
                   <p className="text-center leading-tight font-semibold mb-2">
-                    AI Engineer
+                    AI Engineer/ Data Scientist/ ML Engineer
                   </p>
                   <p className="font-secondary leading-tight text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    est vitae doloribus aliquid omnis magnam neque repudiandae
-                    porro. Laborum, a?
+                  Having over 6 years of experience, bringing innovative solutions, leveraging the latest updates in AI for companies in the US, Europe and Brazil.
                   </p>
                 </div>
               </div>

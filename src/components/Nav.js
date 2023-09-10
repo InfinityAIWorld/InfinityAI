@@ -4,38 +4,42 @@ import { MdEmail } from "react-icons/md";
 import { BsFillBarChartFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 import { BiSolidInfoSquare } from "react-icons/bi";
+import { Tooltip } from "flowbite-react";
 
 const Nav = () => {
   return (
     <nav
-      className="fixed  items-center  xl:gap-y-10  lg:w-600
+      className="fixed  items-center  xl:gap-y-10  lg:w-900
    xl:right-[2%] flex bottom-0 overflow-hidden z-50 xl:justify-between xl:max-w-md xl:h-screen "
     >
-      <div className="container mx-auto">
+      <div className="container lg:w-[200px] lg:flex lg:justify-end flex justify-center lg:mx-auto">
         <div
-          className="w-full xl:flex-col bg-white/10 h-[70px] backdrop-blur-sm rounded-lg 
-    xl:px-0 max-w-[460px] m-2 p-5 flex  xl:justify-center   xl:h-max justify-between text-[25px] items-center"
+          className=" xl:flex-col bg-white/10 h-[70px] w-max lg:w-[80px] backdrop-blur-sm rounded-lg 
+    xl:px-0  p-3 my-1  lg:m-2 lg:p-5 flex  xl:justify-center   xl:h-max justify-between text-[25px] items-center"
         >
-          <Link
-            to="home"
-            activeClass="active"
-            smooth={true}
-            spy={true}
-            offset={-200}
-            data-tooltip-target="tooltip-left"
-            data-tooltip-placement="left"
-            className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF] transition-all duration-300 group relative"
+          <Tooltip
+            content="Home"
+            placement="left"
+            trigger="hover"
+            animation="duration-500"
           >
-            <div
-              id="tooltip-left"
-              role="tooltip"
-              class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+            <Link
+              to="home"
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              offset={-200}
+              className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF] transition-all duration-300 group relative"
             >
-              Tooltip on left
-              <div class="tooltip-arrow" data-popper-arrow></div>
-            </div>
-            <HiHome />
-          </Link>
+              <HiHome />
+            </Link>
+          </Tooltip>
+          <Tooltip
+            content="About Us"
+            placement="left"
+            trigger="hover"
+            animation="duration-500"
+          >
           <Link
             to="about"
             activeClass="active"
@@ -47,6 +51,13 @@ const Nav = () => {
           >
             <BiSolidInfoSquare />
           </Link>
+          </Tooltip>
+          <Tooltip
+            content="Services"
+            placement="left"
+            trigger="hover"
+            animation="duration-500"
+          >
           <Link
             to="services"
             activeClass="active"
@@ -56,6 +67,13 @@ const Nav = () => {
           >
             <BsFillBarChartFill />
           </Link>
+          </Tooltip>
+          <Tooltip
+            content="Tecnologies"
+            placement="left"
+            trigger="hover"
+            animation="duration-500"
+          >
           <Link
             to="tecnologies"
             activeClass="active"
@@ -65,6 +83,13 @@ const Nav = () => {
           >
             <HiMiniCodeBracket />
           </Link>
+          </Tooltip>
+          <Tooltip
+            content="Team"
+            placement="left"
+            trigger="hover"
+            animation="duration-500"
+          >
           <Link
             to="Team"
             activeClass="active"
@@ -74,6 +99,13 @@ const Nav = () => {
           >
             <HiMiniUsers />
           </Link>
+          </Tooltip>
+          <Tooltip
+            content="Contact"
+            placement="left"
+            trigger="hover"
+            animation="duration-500"
+          >
           <Link
             to="contact"
             activeClass="active"
@@ -83,6 +115,7 @@ const Nav = () => {
           >
             <MdEmail />
           </Link>
+          </Tooltip>
         </div>
       </div>
     </nav>

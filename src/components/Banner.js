@@ -15,7 +15,7 @@ const Banner = () => {
   return (
     <div
       id="home"
-      className="min-h-[85vh] h-screen  w-full lg:min-h-[78vh] flex items-center"
+      className="min-h-[85vh] lg:h-screen  lg:w-full lg:min-h-[78vh] flex items-center"
     >
       <div className="container mx-auto">
         <div className="flex  flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
@@ -37,7 +37,7 @@ const Banner = () => {
               className="mb-6 mt-4 text-[32px] lg:text-[60px] font-secondary font-semibold uppercase
             leading=[1]"
             >
-              <span className=" text-white mr-4 text-[55px] lg:text-[75px] ">
+              <span className=" text-white mr-4 text-[40px] lg:text-[75px] ">
                 We're
               </span>
               <br />
@@ -58,7 +58,7 @@ const Banner = () => {
                   2000,
                 ]}
                 speed={50}
-                className=" text-accent lg:text-[80px]"
+                className=" text-accent font-primary tracking-[10%] text-[28px] font-semibold lg:text-[80px]"
                 wrapper="span"
                 repeat={Infinity}
               />
@@ -94,7 +94,7 @@ const Banner = () => {
                 Our Services
               </a>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               variants={fadeIn("up", 0.7)}
               initial="hidden"
               whileInView={"show"}
@@ -122,7 +122,7 @@ const Banner = () => {
               >
                 <FaInstagram />
               </a>
-            </motion.div>
+            </motion.div> */}
           </div>
           <div className="w-full h-full absolute right-0 bottom-0">
             <ParticlesContainer />

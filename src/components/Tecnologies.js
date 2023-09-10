@@ -9,18 +9,18 @@ const Tecnologies = () => {
   return (
     <section
       id="tecnologies"
-      className=" h-screen  w-full lg:min-h-[78vh] flex items-center justify-center"
+      className=" lg:h-screen mb-2  lg:w-full lg:min-h-[78vh] flex items-center justify-center"
     >
-      <div className=" container flex flex-row max-auto xl:mx-0">
+      <div className=" container flex-col lg:flex lg:flex-row max-auto xl:mx-0">
         <motion.div 
         variants={fadeIn("right", 0.3)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="flex items-center justify-center w-1/2 ">
+        className="flex items-center justify-center lg:w-1/2 ">
           <div className="flex-1  items-center justify-center p-5">
           <h2 className=" h2  text-accent font-semibold">We Know<span className="text-white ml-0 pl-0">.</span></h2>
-            <h3 className=" h3 mb-4 ">
+            <h3 className=" h3-responsive lg:h3 mb-4 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, qui.
             </h3>
             <p className="mb-6">
@@ -32,24 +32,24 @@ const Tecnologies = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="flex w-1/2 ">
+        className="flex justify-center items-center lg:w-1/2 ">
         <div className="relative flex justify-center items-center">
           <div className=" relative flex justify-center items-center">
           <img
             src={CircleLg}
             alt=""
-            className="animate-spin-slow w-[600px] h-[600px]  "
+            className="animate-spin-slow w-[200px] h-[200px] lg:w-[600px] lg:h-[600px]  "
           />
           <img
             src={CircleMd}
             alt=""
-            className="animate-spinslowant absolute w-[500px] h-[500px] "
+            className="animate-spinslowant absolute w-[150px] h-[150px] lg:w-[500px] lg:h-[500px] "
           />
           <img
             src={CircleSm}
 
             alt=""
-            className="animate-spin-slow absolute  w-[250px] h-[250px] "
+            className="animate-spin-slow absolute  w-[80px] h-[80px] lg:w-[250px] lg:h-[250px] "
           />         
           </div>
         </div>

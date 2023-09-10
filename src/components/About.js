@@ -16,7 +16,7 @@ const About = () => {
       <div className="flex container mx-auto">
         <div
           className="flex flex-col gap-y-10 lg:flex-row lg:items-center
-      lg:gap-x-20 lg:gap-y-0 h-screen"
+      lg:gap-x-20 lg:gap-y-0 lg:h-screen"
         >
           <motion.div
             variants={fadeIn("right", 0.3)}
@@ -25,17 +25,19 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1"
           >
-            <h2 className=" h2  text-accent font-semibold">About Us<span className="text-white ml-0 pl-0">.</span></h2>
-            <h3 className=" h3 mb-4 ">
+            <h2 className=" h2  text-accent font-semibold">
+              About Us<span className="text-white ml-0 pl-0">.</span>
+            </h2>
+            <h3 className=" h3-responsive mb-1 lg:h3">
               We are a Data company with projects across the US, Europe and
               South America!
             </h3>
-            <p className="mb-6">
+            <p className="mb-6 text-lg lg:font-secondary lg:leading-8 ">
               We possess expertise in various domains including Artificial
               Intelligence, Data Engineering, Data Science, MLOps, Large
               Language Models, Data Analytics, among others!
             </p>
-            <div className="flex gap-x-6 lg:gap-x-10 mb-12 lg:justify-center">
+            <div className="flex gap-x-6 lg:gap-x-10 mb-4 lg:mb-12 lg:justify-center">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient">
                   +{inView ? <CountUp start={0} end={10} duration={3} /> : null}
@@ -65,17 +67,17 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className=" flex gap-x-8 items-center mr-8 lg:justify-center">
+            <div className=" flex gap-x-8 items-center mr-8 justify-center">
               <a
                 href="https://www.linkedin.com/in/marivaldotorres/"
                 target="_blank"
               >
-                              <button className="btn btn-lg rounded-lg  max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
-              <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                Contact US
-              </span>
-              <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
-            </button>
+                <button className="btn btn-lg rounded-lg  max-w-[170px] animate-ping px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+                  <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                    Contact US
+                  </span>
+                  <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
+                </button>
               </a>
             </div>
           </motion.div>
@@ -86,7 +88,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex-col lg:space-y-5 "
           >
-            <div className="flex flex-row items-center lg:h-[163px] lg:py-5 hover:bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow">
+            <div className="flex flex-row items-center lg:h-[163px] h-[240px] py-2 lg:py-5 hover:bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow">
               <div className="w-20 h-16 bg-[#340844] bg-opacity-50 text-[30px] rounded-2xl flex items-center justify-center m-4 px-5 text-[#D55EFF] hover:text-white">
                 <HiStar />
               </div>
@@ -101,7 +103,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row  items-center lg:h-[163px] h-full py-5 hover:bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow">
+            <div className="flex flex-row  items-center lg:h-[163px] h-[240px] py-2 lg:py-5 hover:bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow">
               <div className="w-20 h-16 bg-[#340844] bg-opacity-50 text-[30px] rounded-2xl flex items-center justify-center m-4 px-5 text-[#D55EFF] hover:text-white">
                 <HiMiniUsers />
               </div>
@@ -118,7 +120,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row items-center lg:h-[163px] h-full py-5  hover:bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow">
+            <div className="flex flex-row items-center lg:h-[163px] h-[240px] py-2 lg:py-5  hover:bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow">
               <div className="w-20 h-16 bg-[#340844] bg-opacity-50 text-[30px] rounded-2xl flex items-center justify-center m-4 px-5 text-[#D55EFF] hover:text-white">
                 <BsSendFill />
               </div>

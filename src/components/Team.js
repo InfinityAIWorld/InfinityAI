@@ -10,7 +10,6 @@ import Modec from "../assets/modec-logo.png";
 import Ipiranga from "../assets/ipiranga-logo.png";
 import Porto from "../assets/porto-logo.png";
 
-
 const Team = () => {
   return (
     <div
@@ -41,9 +40,9 @@ const Team = () => {
               </a>
             </div>
           </motion.div>
-          <div className="flex flex-col lg:flex-row  justify-center items-center p-5 pb-0">
+          <div className="flex flex-col lg:flex-row  justify-center items-center  p-5 pb-0">
             <div className="flex-1 flex flex-col gap-y-2">
-              <div className="flex flex-col lg:flex-row h-full  gap-x-5">
+              <div className="flex flex-col lg:flex-row lg:h-full gap-y-24 gap-x-5">
                 <motion.div
                   variants={fadeIn("left", 0.3)}
                   initial="hidden"
@@ -79,7 +78,7 @@ const Team = () => {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.7 }}
-                  className=" flex-col justify-center drop-shadow-lg p-5  lg:w-81 h-94   cursor-pointer  bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow "
+                  className=" flex-col  justify-center drop-shadow-lg p-5  lg:w-81 h-94   cursor-pointer  bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow "
                 >
                   <div className="rounded-full flex items-center justify-center pb-1">
                     <img
@@ -156,24 +155,25 @@ const Team = () => {
             viewport={{ once: false, amount: 0.3 }}
             className=" flex-1 flex justify-center lg:py-2 lg:px-5 "
           >
-            <div className="flex-1 flex lg:flex-row gap-x-5 gap-y-5">
-              <div className="flex  justify-start items-center w-1/5 p-3 ">
-                <img src={Shopee} width={150} alt="Logo Shopee" className="" />
+            <div className="flex-1 flex flex-col justify-center  items-center lg:flex-row gap-x-5 gap-y-5">
+              <div className="flex  justify-start items-center w-1/3 lg:w-1/5 p-3 ">
+                <img src={Shopee} alt="Logo Shopee" className="w-[150px]" />
               </div>
-              <div className="flex justify-center items-center w-1/5 p-3 ">
-                <img src={Modec} width={150} alt="" className="" />
+              <div className="flex justify-center items-center w-1/3 lg:w-1/5 p-3 ">
+                <img src={Modec} alt="" className="w-[150px]" />
               </div>
-              <div className="flex justify-end items-center w-1/5 p-3 ">
-                <img src={Ipiranga} width={150} alt="" className="" />
+              <div className="flex justify-center items-center w-1/3 lg:w-1/5 p-3 ">
+                <img src={Ipiranga} alt="" className="w-[150px]" />
               </div>
-              <div className="flex justify-end items-center w-1/5 p-3 ">
-                <img src={Bradesco} width={150} alt="" className="" />
+              <div className="flex justify-center items-center  w-1/2 lg:w-1/5 p-3 ">
+                <img src={Bradesco} alt="" className="w-[150px]" />
               </div>
-              <div className="flex justify-end items-center w-1/5 p-3 ">
-                <img src={Porto} width={150} alt="" className="" />
+              <div className="flex justify-end items-center w-1/2 lg:w-1/5 p-3 ">
+                <img src={Porto} alt="" className="w-[150px]" />
               </div>
             </div>
           </motion.div>
+
         </div>
       </div>
     </div>

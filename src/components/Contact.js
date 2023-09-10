@@ -7,11 +7,11 @@ import { BsArrowRight } from "react-icons/bs";
 const Contact = () => {
   return (
     <div
-      className=" section h-full lg:bg-contact lg:bg-contain lg:bg-left-bottom bg-no-repeat mix-blend-lighten"
+      className=" h-max section mb-4 lg:h-full lg:bg-contact lg:bg-contain lg:bg-left-bottom lg:bg-no-repeat lg:mix-blend-lighten"
       id="contact"
     >
-      <div className="container mx-auto pt-8 pb-32 lg:py-8 lg:px-16 text-center xl:text-left flex items-center justify-center lg:justify-end h-full">
-        <div className="flex flex-col w-full max-w-[700px]">
+      <div className="container mx-auto pt-8 pb-32 lg:py-8 lg:px-16 text-center xl:text-left flex items-center justify-center lg:justify-end lg:h-full">
+        <div className="flex flex-col lg:w-full max-w-[700px]">
           <motion.h2
             variants={fadeIn("up", 0.2)}
             initial="hidden"

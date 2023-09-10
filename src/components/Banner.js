@@ -37,7 +37,7 @@ const Banner = () => {
               className="mb-6 mt-4 text-[32px] lg:text-[60px] font-secondary font-semibold uppercase
             leading=[1]"
             >
-              <span className=" text-white mr-4 text-[40px] lg:text-[75px] ">
+              <span className=" text-white mr-4 text-[40px] lg:text-6xl ">
                 We're
               </span>
               <br />
@@ -58,7 +58,7 @@ const Banner = () => {
                   2000,
                 ]}
                 speed={50}
-                className=" text-accent font-primary tracking-[10%] text-[28px] font-semibold lg:text-[80px]"
+                className=" text-accent font-primary tracking-[10%] text-[28px] font-semibold lg:text-5xl"
                 wrapper="span"
                 repeat={Infinity}
               />

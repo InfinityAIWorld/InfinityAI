@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { BsArrowRight } from "react-icons/bs";
 
+
 const Contact = () => {
   return (
     <div
@@ -16,9 +17,9 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-center mb-12"
+            className="h2 text-center font-semibold  mb-12 leading-tight"
           >
-            Let&apos;s <span className="text-accent">connect.</span>
+            Let&apos;s <span className=" text-accent">connect<span className="text-white ml-0 pl-0">.</span></span>
           </motion.h2>
           <motion.form
             variants={fadeIn("up", 0.4)}

@@ -3,10 +3,11 @@ import React from 'react';
 import Banner from './components/Banner';
 import Header from './components/Header';
 import Nav from './components/Nav';
-import About from './components/About';
+import About from './components/About'; 
 import Services from './components/Services';
-import Work from './components/Work';
+import Team from './components/Team';
 import Contact from './components/Contact';
+import Tecnologies from './components/Tecnologies';
 import Favicon from 'react-favicon';
 
 const App = () => {
@@ -18,7 +19,8 @@ const App = () => {
       <Nav />
       <About />
       <Services />
-      <Work />
+      <Tecnologies />
+      <Team />
       <Contact />
       <div className='h-max'></div>
     </div>

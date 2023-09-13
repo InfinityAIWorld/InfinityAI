@@ -74,7 +74,7 @@ const Services = () => {
               loop={true}
               grabCursor={true}
               autoplay={{
-                delay: 3000,
+                delay: 10000,
                 disableOnInteraction: true,
               }}
               onSwiper={(swiper) => console.log(swiper)}

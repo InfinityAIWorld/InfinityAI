@@ -142,7 +142,7 @@ const Banner = () => {
               <div className="hidden lg:flex absolute animate-upAndDown1 w-full h-full max-w-[100px] max-h-[100px] -bottom-32 lg:bottom-[65%] lg:right-[43%]">
                 <img src={Ball3} alt="" />
               </div>
-              <div className="hidden lg:flex absolute animate-upAndDown w-full h-full max-w-[300px] max-h-[300px]  -bottom-32 lg:bottom-[27%] lg:right-[17%]">
+              <div className="hidden lg:flex absolute animate-upAndDown w-full h-full max-w-[300px] max-h-[300px]  -bottom-32 lg:bottom-[32%] lg:right-[17%]">
                 <img src={Brain} alt="" />
               </div>
             </motion.div>

@@ -40,7 +40,7 @@ const About = () => {
             <div className="flex gap-x-6 lg:gap-x-10 mb-4 lg:mb-12 lg:justify-center">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient">
-                  +{inView ? <CountUp start={0} end={10} duration={3} /> : null}
+                  +{inView ? <CountUp start={0} end={13} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Years of <br />
@@ -59,7 +59,7 @@ const About = () => {
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient">
-                  +{inView ? <CountUp start={0} end={10} duration={3} /> : null}
+                  +{inView ? <CountUp start={0} end={12} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Companies

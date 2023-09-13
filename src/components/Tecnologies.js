@@ -38,18 +38,18 @@ const Tecnologies = () => {
           <img
             src={CircleLg}
             alt=""
-            className="animate-spin-slow w-[200px] h-[200px] lg:w-[600px] lg:h-[600px]  "
+            className=" opacity-80 w-[200px] h-[200px] lg:w-[600px] lg:h-[600px]  "
           />
           <img
             src={CircleMd}
             alt=""
-            className="animate-spinslowant absolute w-[150px] h-[150px] lg:w-[500px] lg:h-[500px] "
+            className="opacity-80 absolute w-[150px] h-[150px] lg:w-[500px] lg:h-[500px] "
           />
           <img
             src={CircleSm}
 
             alt=""
-            className="animate-spin-slow absolute  w-[80px] h-[80px] lg:w-[250px] lg:h-[250px] "
+            className="opacity-80 absolute  w-[80px] h-[80px] lg:w-[250px] lg:h-[250px] "
           />         
           </div>
         </div>

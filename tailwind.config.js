@@ -50,8 +50,7 @@ module.exports = {
       backgroundImage: {
         site: "url('./assets/site-bg.png')",
         about: "url('./assets/about.png')",
-        contact: "url('./assets/contact.png')",
-        explosion: 'url("./assets/explosion.png")',
+        contact: "url('./assets/services.png')"
       },
     },
   },

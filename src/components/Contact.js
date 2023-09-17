@@ -1,10 +1,49 @@
 import React from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { BsArrowRight } from "react-icons/bs";
-
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    if (!email.trim() || !name.trim() || !message.trim()) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+      subject: subject,
+    };
+    emailjs
+      .send(
+        "service_eejfkvb",
+        "template_sdat9el",
+        templateParams,
+        "-43W4-YJqFqAqmFxV"
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully", response.status, response.text);
+          setMessage("");
+          alert("Email sent successfully! Thank you for reaching out.");
+        },
+        (err) => {
+          console.log("ERROR: ", err);
+        }
+      );
+  }
+
   return (
     <div
       className=" h-max section mb-4 lg:h-full lg:bg-contact lg:bg-contain lg:bg-left-bottom lg:bg-no-repeat lg:mix-blend-lighten"
@@ -19,22 +58,53 @@ const Contact = () => {
             exit="hidden"
             className="h2 text-center font-semibold  mb-12 leading-tight"
           >
-            Let&apos;s <span className=" text-accent">connect<span className="text-white ml-0 pl-0">.</span></span>
+            Let&apos;s{" "}
+            <span className=" text-accent">
+              connect<span className="text-white ml-0 pl-0">.</span>
+            </span>
           </motion.h2>
           <motion.form
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
+            onSubmit={sendEmail}
             className="flex-1 flex flex-col gap-6 w-full mx-auto justify-center"
           >
             <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder="name" className="input" />
-              <input type="text" placeholder="email" className="input" />
+              <input
+                type="text"
+                placeholder="Name..."
+                className="input"
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+              />
+              <input
+                type="text"
+                placeholder="Email..."
+                className="input"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+              />
             </div>
-            <input type="text" placeholder="subject" className="input" />
-            <textarea placeholder="message" className="textarea"></textarea>
-            <button className="btn btn-lg rounded-lg  max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+            <input
+              type="text"
+              placeholder="Subject..."
+              className="input"
+              onChange={(e) => setSubject(e.target.value)}
+              value={subject}
+            />
+
+            <textarea
+              placeholder="Message..."
+              className="textarea"
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
+            ></textarea>
+            <button
+              type="submit"
+              className="btn btn-lg rounded-lg max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+            >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let&apos;s talk
               </span>

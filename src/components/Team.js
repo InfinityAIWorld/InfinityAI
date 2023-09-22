@@ -60,7 +60,7 @@ const Team = () => {
                     />
                   </div>
                   <div className=" text-xl m-3 p-2 text-gradient text-center tracking-wider font-semibold  capitalize leading-normal ">
-                    João Victor
+                    João Palmeira
                   </div>
                   <div className="flex items-center justify-center gap-x-1">
                     <p className="text-center leading-tight font-semibold mb-2 text-xs rounded-md py-1 px-2 bg-red-700 hover:bg-red-900 ">
@@ -68,9 +68,7 @@ const Team = () => {
                     </p>
                   </div>
                   <p className="font-secondary leading-tight text-opacity-70 text-base font-normal text-center p-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    est vitae doloribus aliquid omnis magnam neque repudiandae
-                    porro. Laborum, a?
+                  A professional with a track record of delivering data projects, turning raw data into actionable insights and bridging the gap between data sources and business intelligence.
                   </p>
                 </motion.div>
                 <motion.div

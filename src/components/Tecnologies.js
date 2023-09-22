@@ -9,7 +9,7 @@ const Tecnologies = () => {
   return (
     <section
       id="tecnologies"
-      className=" lg:h-screen mb-2  lg:w-full lg:min-h-[78vh] flex items-center justify-center"
+      className="  lg:h-screen  mb-2  lg:w-full lg:min-h-[78vh] flex items-center justify-center"
     >
       <div className=" container flex-col lg:flex lg:flex-row max-auto xl:mx-0">
         <motion.div 
@@ -40,12 +40,12 @@ const Tecnologies = () => {
           <img
             src={CircleLg}
             alt=""
-            className=" opacity-80 w-[200px] h-[200px] lg:w-[600px] lg:h-[600px]  "
+            className=" opacity-80 w-[200px] h-[200px] lg:w-[450px] lg:h-[450px]  "
           />
           <img
             src={CircleMd}
             alt=""
-            className="opacity-80 absolute w-[150px] h-[150px] lg:w-[500px] lg:h-[500px] "
+            className="opacity-80 absolute w-[150px] h-[150px] lg:w-[400px] lg:h-[400px] "
           />
           <img
             src={CircleSm}

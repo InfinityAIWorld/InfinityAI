@@ -21,7 +21,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className=" lg:section flex items-center lg:h-screen "
+      className="  flex items-center lg:h-screen "
     >
       <div className="container mx-auto my-auto lg:h-full ">
         <div className=" flex flex-col m-2 mb-10  lg:bg-opacity-5 ">

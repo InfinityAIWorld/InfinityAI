@@ -37,31 +37,31 @@ const About = () => {
               Intelligence, Data Engineering, Data Science, MLOps, Large
               Language Models, Data Analytics, among others!
             </p>
-            <div className="flex gap-x-6 lg:gap-x-10 mb-4 lg:mb-12 lg:justify-center">
+            <div className="flex gap-x-6 lg:gap-x-10 mb-4 lg:mb-12 lg:justify-center h-fit">
               <div>
-                <div className="text-[40px] font-tertiary text-gradient">
+                <div className="text-[40px] font-tertiary text-gradient h-fit">
                   +{inView ? <CountUp start={0} end={13} duration={3} /> : null}
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-primary text-sm tracking-[2px] py-2">
                   Years of <br />
                   Experience
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient">
+                <div className="text-[40px] font-tertiary text-gradient h-fit">
                   +
                   {inView ? <CountUp start={0} end={100} duration={3} /> : null}
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-primary text-sm tracking-[2px]  py-2">
                   Millions in Revenue <br />
                   for our Clients
                 </div>
               </div>
               <div>
-                <div className="text-[40px] font-tertiary text-gradient">
+                <div className="text-[40px] font-tertiary text-gradient h-fit">
                   +{inView ? <CountUp start={0} end={12} duration={3} /> : null}
                 </div>
-                <div className="font-primary text-sm tracking-[2px]">
+                <div className="font-primary text-sm tracking-[2px]  py-2">
                   Companies
                   <br />
                 </div>

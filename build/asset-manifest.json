@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/InfinityAI/static/css/main.9d288987.css",
-    "main.js": "/InfinityAI/static/js/main.6ced406a.js",
+    "main.css": "/InfinityAI/static/css/main.91548321.css",
+    "main.js": "/InfinityAI/static/js/main.c9261691.js",
     "static/media/site-bg.png": "/InfinityAI/static/media/site-bg.44f4a8b650cebb6859b5.png",
-    "static/media/explosion.png": "/InfinityAI/static/media/explosion.dfaa6077d444fe02a88a.png",
     "static/media/junior.png": "/InfinityAI/static/media/junior.00dce38815c4d345d19b.png",
     "static/media/robot.png": "/InfinityAI/static/media/robot.299bfc5695988e63ea72.png",
     "static/media/romulo.png": "/InfinityAI/static/media/romulo.6e82dcff3be67a1f7393.png",
     "static/media/joao.png": "/InfinityAI/static/media/joao.d617aa8d5ddea572ece4.png",
-    "static/media/contact.png": "/InfinityAI/static/media/contact.7fa5ca229d9ce1208072.png",
     "static/media/MLOps.png": "/InfinityAI/static/media/MLOps.076af9f36f601d5d7c6e.png",
+    "static/media/services.png": "/InfinityAI/static/media/services.d85c6661f1c3f96c4c0a.png",
     "static/media/DE.png": "/InfinityAI/static/media/DE.a6bfb3117a77ce5d7650.png",
     "static/media/MLE.png": "/InfinityAI/static/media/MLE.ff718714e5bfbd54cc0b.png",
     "static/media/AI.png": "/InfinityAI/static/media/AI.f2f7e07a35e269cc8bbc.png",
@@ -22,11 +21,11 @@
     "static/media/circle-sm.png": "/InfinityAI/static/media/circle-sm.b0edb2369f8e1e83ee7f.png",
     "static/media/logo.svg": "/InfinityAI/static/media/logo.91660e94cb69696ba11c41ca6f53d8c8.svg",
     "index.html": "/InfinityAI/index.html",
-    "main.9d288987.css.map": "/InfinityAI/static/css/main.9d288987.css.map",
-    "main.6ced406a.js.map": "/InfinityAI/static/js/main.6ced406a.js.map"
+    "main.91548321.css.map": "/InfinityAI/static/css/main.91548321.css.map",
+    "main.c9261691.js.map": "/InfinityAI/static/js/main.c9261691.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d288987.css",
-    "static/js/main.6ced406a.js"
+    "static/css/main.91548321.css",
+    "static/js/main.c9261691.js"
   ]
 }

@@ -10,9 +10,9 @@ const Nav = () => {
   return (
     <nav
       className="fixed  items-center  xl:gap-y-10  lg:w-900
-   xl:right-[2%] flex bottom-0 overflow-hidden z-50 xl:justify-between xl:max-w-md xl:h-screen "
+   xl:right-[0%] flex bottom-0 overflow-hidden z-50 xl:justify-between xl:max-w-md xl:h-screen w-full xl:w-fit"
     >
-      <div className="container lg:w-[200px] lg:flex lg:justify-end flex justify-center lg:mx-auto">
+      <div className="container lg:w-[200px] lg:flex lg:justify-end flex justify-center  lg:mx-auto">
         <div
           className=" xl:flex-col bg-white/10 h-[70px] w-max lg:w-[80px] backdrop-blur-sm rounded-lg 
     xl:px-0  p-3 my-1  lg:m-2 lg:p-5 flex  xl:justify-center   xl:h-max justify-between text-[25px] items-center"

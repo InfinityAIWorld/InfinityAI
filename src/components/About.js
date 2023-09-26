@@ -6,6 +6,7 @@ import { fadeIn } from "../variants";
 import { HiStar, HiMiniUsers } from "react-icons/hi2";
 import { BsSendFill } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -68,17 +69,14 @@ const About = () => {
               </div>
             </div>
             <div className=" flex gap-x-8 items-center mr-8 justify-center">
-              <a
-                href="https://www.linkedin.com/in/marivaldotorres/"
-                target="_blank"
-              >
+              <Link smooth={true} to="contact" spy={true}>
                 <button className="btn btn-lg rounded-lg  max-w-[170px] animate-ping px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
                   <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                     Contact US
                   </span>
                   <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
                 </button>
-              </a>
+              </Link>
             </div>
           </motion.div>
           <motion.div

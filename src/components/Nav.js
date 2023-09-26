@@ -30,7 +30,6 @@ const Nav = () => {
               activeClass="active"
               smooth={true}
               spy={true}
-              offset={-200}
               className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF] transition-all duration-300 group relative"
             >
               <HiHome />
@@ -118,6 +117,7 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
+            offset={-10}
             className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF]"
           >
             <MdEmail />

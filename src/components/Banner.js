@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -10,6 +11,7 @@ import Ball3 from "../assets/ball3.png";
 import Brain from "../assets/Brain.svg";
 import ParticlesContainer from "../components/ParticlesContainer";
 import { BsArrowRight } from "react-icons/bs";
+import Logo from "../assets/logo.svg"; //
 
 const Banner = () => {
   return (
@@ -17,31 +19,25 @@ const Banner = () => {
       id="home"
       className="min-h-[85vh] lg:h-screen  lg:w-full lg:min-h-[78vh] flex items-center"
     >
-      <div className="container mx-auto">
-        <div className="flex  flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
-          <div className=" flex-1 text-center font-secondary lg:text-left max-w-[600px] z-50">
-            {/* <motion.h1 
-          variants={fadeIn('up', 0.3)}
-          initial="hidden"
-          exit="exit"
-          whileInView={'show'}
-          viewport={{once:false, amount:0.7}}
-          className=' text-[55px] font-bold leading-[0.8] lg:text-[100px] '>
-            JUNIOR <span>TORRES</span>
-            </motion.h1> */}
+      <div className="container mx-auto ">
+        <div className="flex  flex-1 flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
+          <div className=" flex-1 text-center font-secondary lg:text-left max-w-[800px] z-50">
             <motion.div
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 mt-4 text-[32px] lg:text-[60px] font-secondary font-semibold uppercase
-            leading=[1]"
+            leading=[1] flex  items-center flex-col lg:items-start"
             >
-              <span className=" text-white mr-4 text-[40px] lg:text-6xl ">
-                We're
-              </span>
-              <br />
-              <br />
+              <div className=" lg:w-[400px]  w-[270px]  ">
+                <a href="" target="_blank">
+                  <img src={Logo} alt="" />
+                </a>
+              </div>
+              <div className=" mb-3 text-white font-primary text-[32px] lg:text-5xl ">
+                We are
+              </div>
               <TypeAnimation
                 sequence={[
                   "MLOps Engineers",
@@ -58,7 +54,7 @@ const Banner = () => {
                   2000,
                 ]}
                 speed={50}
-                className=" text-accent font-primary tracking-[10%] text-[28px] font-semibold lg:text-5xl"
+                className=" text-accent font-primary tracking-[10%] !text-[32px] font-semibold lg:!text-5xl"
                 wrapper="span"
                 repeat={Infinity}
               />
@@ -68,7 +64,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" mb-8 max-wlg mx-auto lg:mx-0"
+              className=" mb-8 max-w-[390px] mx-auto lg:mx-0 lg:max-w-[600px] p-2"
             >
               Welcome to our website. Here, you will find out about all the
               services that we offer, as well as learn a little more about what
@@ -81,55 +77,29 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 hover:z-50"
             >
-              <a href="#" target="_blank">
-              <button className="btn btn-lg rounded-lg  max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
-              <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                Contact US
-              </span>
+              <Link smooth={true} to="contact" spy={true} >
+                <button  className="btn btn-lg rounded-lg  max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+                  <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                    Contact US
+                  </span>
+                  <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
+                </button>
+              </Link>
               <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
-            </button>
-              </a>
-              <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
-              <a className="text-gradient btn-link" href="#" target="_blank">
+              <Link 
+              className="text-gradient btn-link" 
+              to="services"
+              spy={true}
+              smooth={true}>
                 Our Services
-              </a>
+              </Link>
             </motion.div>
-            {/* <motion.div
-              variants={fadeIn("up", 0.7)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:-mx-0"
-            >
-              <a
-                href="#"
-                target="_blank"
-                className="text-[25px] hover:text-accent"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                className=" text-[25px] hover:text-accent"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                className=" text-[25px] hover:text-accent"
-              >
-                <FaInstagram />
-              </a>
-            </motion.div> */}
           </div>
           <div className="w-full h-full absolute right-0 bottom-0">
             <ParticlesContainer />
             <motion.div className="">
               <div
-                className=" max-w-[737px] lg:max-w-[678px]  xl:flex xl:max-w-none
-         hidden lg:flex absolute  -bottom-32 lg:bottom-[-4%] lg:right-[0%] mix-blend-lighten"
+                className="   xl:flex xl:max-w-none hidden lg:flex absolute  -bottom-32 lg:bottom-[-4%] lg:right-[-0%] mix-blend-lighten"
               >
                 <img src={Robo} alt="" />
               </div>

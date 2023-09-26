@@ -21,9 +21,9 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="  flex items-center lg:h-screen "
+      className="flex items-center  w-full h-screen "
     >
-      <div className="container mx-auto my-auto lg:h-full ">
+      <div className="container mx-auto my-auto  w-full h-screen  ">
         <div className=" flex flex-col m-2 mb-10  lg:bg-opacity-5 ">
           <motion.div
             variants={fadeIn("right", 0.3)}
@@ -45,7 +45,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className=" justify-center pb-5"
+            className=" justify-center pb-5 lg:pb-2"
           >
             <Swiper
               // install Swiper modules

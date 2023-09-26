@@ -9,9 +9,9 @@ const Tecnologies = () => {
   return (
     <section
       id="tecnologies"
-      className="  lg:h-screen  mb-2  lg:w-full lg:min-h-[78vh] flex items-center justify-center"
+      className="  w-full h-screen  mb-2  flex items-center justify-center"
     >
-      <div className=" container flex-col lg:flex lg:flex-row max-auto xl:mx-0">
+      <div id="tecnologies" className=" container flex-col lg:flex lg:flex-row max-auto xl:mx-0">
         <motion.div 
         variants={fadeIn("right", 0.3)}
         initial="hidden"
@@ -34,7 +34,7 @@ const Tecnologies = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="flex justify-center items-center lg:w-1/2 ">
+        className="hidden lg:flex justify-center items-center lg:w-1/2 ">
         <div className="relative flex justify-center items-center">
           <div className=" relative flex justify-center items-center">
           <img

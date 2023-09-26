@@ -46,10 +46,10 @@ const Contact = () => {
 
   return (
     <div
-      className=" h-max section mb-4 lg:h-full lg:bg-contact lg:bg-contain lg:bg-left-bottom lg:bg-no-repeat lg:mix-blend-lighten"
-      id="contact"
+      className=" h-max section mb-20 lg:mb-4 lg:h-full lg:bg-contact lg:bg-contain lg:bg-left-bottom lg:bg-no-repeat lg:mix-blend-lighten"
+      
     >
-      <div className="container mx-auto pt-8 pb-32 lg:py-8 lg:px-16 text-center xl:text-left flex items-center justify-center lg:justify-end lg:h-full">
+      <div id="contact" className="container mx-auto pt-8 pb-32 lg:py-8 lg:px-16 text-center xl:text-left flex items-center justify-center lg:justify-end lg:h-full">
         <div className="flex flex-col lg:w-full max-w-[700px]">
           <motion.h2
             variants={fadeIn("up", 0.2)}

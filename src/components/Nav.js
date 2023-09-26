@@ -7,6 +7,7 @@ import { BiSolidInfoSquare } from "react-icons/bi";
 import { Tooltip } from "flowbite-react";
 
 const Nav = () => {
+  const isMobile = window.innerWidth <= 400;
   return (
     <nav
       className="fixed  items-center  xl:gap-y-10  lg:w-900
@@ -22,6 +23,7 @@ const Nav = () => {
             placement="left"
             trigger="hover"
             animation="duration-500"
+            className="hidden lg:block"
           >
             <Link
               to="home"
@@ -39,6 +41,7 @@ const Nav = () => {
             placement="left"
             trigger="hover"
             animation="duration-500"
+            className="hidden lg:block"
           >
           <Link
             to="about"
@@ -57,6 +60,7 @@ const Nav = () => {
             placement="left"
             trigger="hover"
             animation="duration-500"
+            className="hidden lg:block"
           >
           <Link
             to="services"
@@ -73,6 +77,7 @@ const Nav = () => {
             placement="left"
             trigger="hover"
             animation="duration-500"
+            className="hidden lg:block"
           >
           <Link
             to="tecnologies"
@@ -89,6 +94,7 @@ const Nav = () => {
             placement="left"
             trigger="hover"
             animation="duration-500"
+            className="hidden lg:block"
           >
           <Link
             to="Team"
@@ -105,6 +111,7 @@ const Nav = () => {
             placement="left"
             trigger="hover"
             animation="duration-500"
+            className="hidden lg:block"
           >
           <Link
             to="contact"
